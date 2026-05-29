@@ -390,7 +390,7 @@ const screwImageRules = [
     match: (name) => name.includes("volcanita") && name.includes("broca"),
   },
   {
-    src: "assets/images/screws/pdf-product-p1-09.png",
+    src: "w=1200,h=1200,fit=pad.jpeg",
     alt: "Tornillo CRS rosca gruesa",
     match: (name, detail) => name.includes("crs") && detail.includes("zincado"),
   },
