@@ -380,17 +380,17 @@ const screwImageRules = [
     match: (name) => name.includes("lenteja") && name.includes("fina"),
   },
   {
-    src: "assets/images/screws/pdf-product-p1-07.png",
+    src: "assets/images/screws/pdf-product-p1-05.png",
     alt: "Tornillo volcanita zincado",
     match: (name) => name.includes("volcanita") && name.includes("fina"),
   },
   {
-    src: "assets/images/screws/pdf-product-p1-08.png",
+    src: "assets/images/screws/pdf-product-p1-06.png",
     alt: "Tornillo volcanita punta broca",
     match: (name) => name.includes("volcanita") && name.includes("broca"),
   },
   {
-    src: "w=1200,h=1200,fit=pad.jpeg",
+    src: "assets/images/screws/w=1200,h=1200,fit=pad.jpeg",
     alt: "Tornillo CRS rosca gruesa",
     match: (name, detail) => name.includes("crs") && detail.includes("zincado"),
   },
