@@ -380,12 +380,12 @@ const screwImageRules = [
     match: (name) => name.includes("lenteja") && name.includes("fina"),
   },
   {
-    src: "assets/images/screws/pdf-product-p1-05.png",
+    src: "assets/images/screws/pdf-product-p1-05.jpg",
     alt: "Tornillo volcanita zincado",
     match: (name) => name.includes("volcanita") && name.includes("fina"),
   },
   {
-    src: "assets/images/screws/pdf-product-p1-06.png",
+    src: "assets/images/screws/pdf-product-p1-06.jpg",
     alt: "Tornillo volcanita punta broca",
     match: (name) => name.includes("volcanita") && name.includes("broca"),
   },
