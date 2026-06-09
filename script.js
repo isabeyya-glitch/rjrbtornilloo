@@ -580,7 +580,7 @@ const screwImageRules = [
     match: (name) => name.includes("turbo"),
   },
   {
-    src: "assets/images/screws/pdf-product-p4-08.png",
+    src: "assets/images/screws/pdf-product-p4-09.png",
     alt: "Tornillo para concreto",
     match: (name) => name.includes("concretos"),
   },
@@ -590,17 +590,17 @@ const screwImageRules = [
     match: (name) => name.includes("autoavellanante"),
   },
   {
-    src: "assets/images/screws/pdf-product-p4-03.jpg",
+    src: "assets/images/screws/pdf-product-p4-02.jpg",
     alt: "Tornillo soberbio",
     match: (name) => name.includes("soberbio"),
   },
   {
-    src: "assets/images/screws/pdf-product-p4-09.jpg",
+    src: "assets/images/screws/pdf-product-p4-03.jpg",
     alt: "Tirafondos",
     match: (name) => name.includes("tirafondo"),
   },
   {
-    src: "assets/images/screws/pdf-product-p4-02.png",
+    src: "assets/images/screws/pdf-product-p4-04.png",
     alt: "Pernos coche",
     match: (name) => name.includes("pernos coche"),
   },
