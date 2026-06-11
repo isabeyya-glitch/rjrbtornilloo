@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RJRB | Catálogo de productos</title>
+    <meta
+      name="description"
+      content="Catálogo RJRB con tornillos, herramientas, lanas de vidrio, ofertas finales y casa portátil modular."
+    >
+    <link rel="stylesheet" href="styles.css?v=20260611-category-pages">
+  </head>
+  <body>
+    <header class="global-nav" aria-label="Principal">
+      <a class="brand" href="#inicio" data-view-target="inicio" aria-label="RJRB inicio">RJRB</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-drawer" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="nav-cta" href="https://wa.me/56940248567?text=Hola%2C%20quiero%20cotizar%20productos%20RJRB." target="_blank" rel="noopener">Cotizar</a>
+    </header>
+
+    <div class="drawer-scrim" hidden></div>
+    <aside id="site-drawer" class="site-drawer" aria-hidden="true" aria-label="Menú de categorías">
+      <div class="drawer-head">
+        <a class="drawer-brand" href="#inicio" data-view-target="inicio">RJRB</a>
+        <button class="drawer-close" type="button" aria-label="Cerrar menú">×</button>
+      </div>
+      <nav class="drawer-links">
+        <button type="button" data-view-target="inicio">Inicio</button>
+        <button type="button" data-view-target="sale">Sale final</button>
+        <button type="button" data-view-target="tornillos">Tornillos</button>
+        <button type="button" data-view-target="herramientas">Herramientas</button>
+        <button type="button" data-view-target="lanas">Lanas de vidrio</button>
+        <button type="button" data-view-target="portable">Casa portátil</button>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </aside>
+
+    <main>
+      <section id="inicio" class="view-panel hero-view active" data-view-panel="inicio" aria-labelledby="hero-title">
+        <picture>
+          <source srcset="assets/images/portable-house-exterior-yard.jpg" media="(min-width: 760px)">
+          <img src="assets/images/portable-house-gray-front.jpg" alt="Casa portátil modular gris con puerta y ventana">
+        </picture>
+        <div class="hero-copy">
+          <p>Importadora y Exportadora RJRB Ltda</p>
+          <h1 id="hero-title">Productos para obra, fijación, aislación y espacios modulares.</h1>
+          <div class="actions">
+            <button class="button-primary" type="button" data-view-target="sale">Ver sale final</button>
+            <button class="button-secondary" type="button" data-view-target="herramientas">Ver herramientas</button>
+          </div>
+        </div>
+        <div class="home-categories" aria-label="Categorías principales">
+          <button type="button" data-view-target="sale">
+            <span>Final sale</span>
+            <strong>Lona de toldo 3.3 x 5 m</strong>
+          </button>
+          <button type="button" data-view-target="herramientas">
+            <span>Catálogo</span>
+            <strong>Herramientas</strong>
+          </button>
+          <button type="button" data-view-target="lanas">
+            <span>Aislación</span>
+            <strong>Lanas de vidrio</strong>
+          </button>
+          <button type="button" data-view-target="tornillos">
+            <span>Fijaciones</span>
+            <strong>Tornillos por caja</strong>
+          </button>
+        </div>
+      </section>
+
+      <section id="sale" class="view-panel product-section sale-section" data-view-panel="sale" hidden aria-labelledby="sale-title">
+        <div class="section-copy">
+          <p class="eyebrow">Final sale</p>
+          <h2 id="sale-title">Productos en oferta final</h2>
+          <p>Todos los productos publicados en esta sección son venta final: no tienen cambio ni devolución.</p>
+          <div class="actions">
+            <a class="button-primary" href="https://wa.me/56940248567?text=Hola%2C%20quiero%20comprar%20la%20lona%20de%20toldo%20en%20sale%20final." target="_blank" rel="noopener">Comprar por WhatsApp</a>
+            <a class="text-link" href="mailto:rjrbltda@gmail.com?subject=Sale%20final%20lona%20de%20toldo">Solicitar por email</a>
+          </div>
+        </div>
+        <div id="sale-root" class="sale-root"></div>
+      </section>
+
+      <section id="tornillos" class="view-panel product-section light" data-view-panel="tornillos" hidden aria-labelledby="tornillos-title">
+        <div class="section-copy">
+          <p class="eyebrow">Stock y precio actualizado 19-05-26</p>
+          <h2 id="tornillos-title">Tornillos por cajas</h2>
+          <p>Catálogo mayorista con tornillos, fijaciones, tarugos, anclajes, pernos, tuercas y accesorios de instalación.</p>
+          <div class="actions">
+            <a class="button-primary" href="assets/docs/tornillos-catalogo.pdf" download>Descargar PDF</a>
+            <a class="text-link" href="mailto:rjrbltda@gmail.com?subject=Cotizacion%20tornillos">Solicitar cotización</a>
+          </div>
+        </div>
+
+        <div class="catalog-toolbar" aria-label="Buscar productos de tornillos">
+          <label class="search-shell">
+            <span>Buscar</span>
+            <input id="screw-search" type="search" placeholder="Medida, familia, acabado">
+          </label>
+          <p id="catalog-count" aria-live="polite"></p>
+        </div>
+
+        <div id="catalogue-root" class="catalogue-root"></div>
+      </section>
+
+      <section id="herramientas" class="view-panel product-section muted-section" data-view-panel="herramientas" hidden aria-labelledby="herramientas-title">
+        <div class="section-copy">
+          <p class="eyebrow">Desde catálogo herramientas 25-09-2023</p>
+          <h2 id="herramientas-title">Herramientas y productos de ferretería</h2>
+          <p>Cada producto muestra foto referencial, precio y especificación principal.</p>
+        </div>
+        <div id="tools-root" class="product-card-grid"></div>
+      </section>
+
+      <section id="lanas" class="view-panel product-section light" data-view-panel="lanas" hidden aria-labelledby="lanas-title">
+        <div class="section-copy">
+          <p class="eyebrow">Aislación térmica y acústica</p>
+          <h2 id="lanas-title">Lanas de vidrio</h2>
+          <p>Productos en rollo y paneles con precios del documento de lanas de vidrio.</p>
+        </div>
+        <div id="glass-root" class="product-card-grid"></div>
+      </section>
+
+      <section id="portable" class="view-panel product-section dark" data-view-panel="portable" hidden aria-labelledby="portable-title">
+        <div class="section-copy">
+          <p class="eyebrow">Un producto, múltiples usos</p>
+          <h2 id="portable-title">Casa portátil modular</h2>
+          <p>
+            Estructura portable para vivienda, oficina, sala de reunión o tienda.
+            Las imágenes muestran configuraciones exteriores e interiores del mismo producto.
+          </p>
+          <div class="actions">
+            <a class="button-primary" href="https://wa.me/56940248567?text=Hola%2C%20quiero%20cotizar%20la%20casa%20portatil." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+            <a class="button-secondary dark-button" href="mailto:rjrbltda@gmail.com?subject=Cotizacion%20casa%20portatil">Enviar email</a>
+          </div>
+        </div>
+
+        <section class="gallery" aria-label="Galería de casa portátil">
+          <div class="gallery-stage">
+            <button class="gallery-control prev" type="button" aria-label="Imagen anterior">‹</button>
+            <img id="gallery-main" src="assets/images/portable-house-exterior-yard.jpg" alt="Casa portátil gris instalada en exterior">
+            <button class="gallery-control next" type="button" aria-label="Imagen siguiente">›</button>
+          </div>
+          <div class="gallery-meta">
+            <strong id="gallery-title">Exterior residencial</strong>
+            <span id="gallery-count">1 / 11</span>
+          </div>
+          <div class="thumbs" role="list" aria-label="Seleccionar imagen">
+            <button class="thumb active" type="button" data-index="0" aria-label="Exterior residencial"><img src="assets/images/portable-house-exterior-yard.jpg" alt=""></button>
+            <button class="thumb" type="button" data-index="1" aria-label="Fachada comercial"><img src="assets/images/portable-house-icecream-exterior.jpg" alt=""></button>
+            <button class="thumb" type="button" data-index="2" aria-label="Interior tienda"><img src="assets/images/portable-house-shop-interior.jpg" alt=""></button>
+            <button class="thumb" type="button" data-index="3" aria-label="Interior café"><img src="assets/images/portable-house-cafe.jpg" alt=""></button>
+            <button class="thumb" type="button" data-index="4" aria-label="Dormitorio equipado"><img src="assets/images/portable-house-bedroom-wide.jpg" alt=""></button>
+            <button class="thumb" type="button" data-index="5" aria-label="Dormitorio minimal"><img src="assets/images/portable-house-bedroom-minimal.jpg" alt=""></button>
+            <button class="thumb" type="button" data-index="6" aria-label="Sala de reunión"><img src="assets/images/portable-house-meeting-room.jpg" alt=""></button>
+            <button class="thumb" type="button" data-index="7" aria-label="Exterior lateral"><img src="assets/images/portable-house-gray-side.jpg" alt=""></button>
+            <button class="thumb" type="button" data-index="8" aria-label="Línea de producción"><img src="assets/images/portable-house-production-line.jpg" alt=""></button>
+            <button class="thumb" type="button" data-index="9" aria-label="Frente gris"><img src="assets/images/portable-house-gray-front.jpg" alt=""></button>
+            <button class="thumb" type="button" data-index="10" aria-label="Parte posterior gris"><img src="assets/images/portable-house-gray-back.jpg" alt=""></button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="sale-popup" role="dialog" aria-modal="true" aria-labelledby="sale-popup-title" hidden>
+      <article class="sale-popup-card">
+        <button class="sale-popup-close" type="button" aria-label="Cerrar aviso">×</button>
+        <img src="assets/images/sale/lona-toldo-canva.jpeg" alt="Lona de toldo azul 3.3 por 5 metros">
+        <div>
+          <p class="eyebrow">Oferta final</p>
+          <h2 id="sale-popup-title">Lona de toldo 3.3 x 5 m</h2>
+          <p class="popup-copy">Precio final $20.000. Disponibles 60 unidades.</p>
+          <button class="button-primary" type="button" data-view-target="sale">Ver oferta</button>
+        </div>
+      </article>
+    </div>
+
+    <footer id="contacto" class="footer">
+      <div>
+        <h2>Contacto</h2>
+        <p>Importadora y Exportadora RJRB Ltda · RUT 76.854.348-8</p>
+      </div>
+      <address>
+        <a href="mailto:rjrbltda@gmail.com">rjrbltda@gmail.com</a>
+        <a href="https://wa.me/56940248567?text=Hola%2C%20quiero%20contactar%20a%20RJRB." target="_blank" rel="noopener">WhatsApp +56 9 4024 8567</a>
+        <span>Santa Adela 9500, Maipú</span>
+      </address>
+      <p class="legal-copy">
+        © 2026 RJRB Ltda. Todos los derechos reservados.<br>
+        Sitio web informativo. Los productos, disponibilidad y especificaciones pueden cambiar sin previo aviso.<br>
+        Para confirmar información, contáctenos directamente.
+      </p>
+    </footer>
+
+    <script src="script.js?v=20260611-category-pages"></script>
+  </body>
+</html>
