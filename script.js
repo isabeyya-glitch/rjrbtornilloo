@@ -372,7 +372,7 @@ const saleItems = [
   {
     name: "Lona de toldo 3.3 x 5 m",
     eyebrow: "Final sale",
-    price: "$20.000",
+    price: "$25.000",
     stock: "60 unidades disponibles",
     description:
       "Lona azul impermeable e ignifuga para cubrir mercancias, cargas de camion, almacenaje y uso temporal al aire libre.",
